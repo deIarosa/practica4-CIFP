@@ -11,7 +11,7 @@
 <body>
     <div class="inicio">
         <h3>Nombre de usuario y Contraseña</h3>
-        <img class="logo" src="../img/logo.jpg" alt="centro">
+        <img class="logo" src="../img/logo.jpg" alt="logoCIFP">
         <form>
             <div id="usuario">
                 <label id="usu" for="nombre">Usuario:</label>
@@ -29,8 +29,8 @@
         document.getElementById("iniciar").addEventListener("click", iniciar);
 
         function iniciar() {
-
             let usuario = document.getElementById("nombre").value;
+            
             if (usuario == "admin") {
                 window.location = "../Administración/administración.html";
             } else if (usuario == "profesor") {
