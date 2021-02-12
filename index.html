@@ -11,7 +11,7 @@
 <body>
     <div class="inicio">
         <h3>Nombre de usuario y Contraseña</h3>
-        <img class="logo" src="../img/logo.jpg" alt="logoCIFP">
+        <img class="logo" src="img/logo.jpg" alt="logoCIFP">
         <form>
             <div id="usuario">
                 <label id="usu" for="nombre">Usuario:</label>
@@ -32,11 +32,11 @@
             let usuario = document.getElementById("nombre").value;
             
             if (usuario == "admin") {
-                window.location = "../Administración/administración.html";
+                window.location = "Administración/administración.html";
             } else if (usuario == "profesor") {
-                window.location = "../Profesores/profesores.html";
+                window.location = "Profesores/profesores.html";
             } else if (usuario == "alumno") {
-                window.location = "../Alumnos/alumnos.html";
+                window.location = "Alumnos/alumnos.html";
             } else {
                 alert("Para acceder a la página debes ser admin, profesor o alumno");
             }
