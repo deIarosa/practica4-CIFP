@@ -24,7 +24,72 @@
             </nav>
         </section>
     </header>
-    <main></main>
+    <main>
+        <form>
+            <div id="form">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <div><label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required></div>
+
+                    <div> <label for="ape">Apellidos:</label>
+                        <input type="text" id="ape" name="ape" required></div>
+                    <div><label for="edad">Edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="150" required></div>
+
+                    <div><label for="mail">Correo electrónico:</label>
+                        <input type="email" id="mail" name="mail" required></div>
+
+                    <div><label for="tel">Teléfono:</label>
+                        <input type="text" id="tel" name="tel" maxlength="9" required></div>
+                    <div>
+                        <p>Sexo:</p>
+                        <input type="radio" name="hm" id="h" value="h" required>
+                        <label for="h">Hombre</label>
+                        <input type="radio" name="hm" id="m" value="m" required>
+                        <label for="m">Mujer</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="form2">
+                <fieldset>
+                    <legend>Curso</legend>
+                    <div>
+                        <label for="ciclo">Ciclo formativo:</label>
+                        <select id="ciclo">
+                            <optgroup label="Administración y Gestion">
+                                <option value="ga">Gestión Administrativa</option>
+                                <option value="af">Administración y Finanzas</option>
+                                <option value="ad">Asistencia a la Dirección</option>
+                            </optgroup>
+                            <optgroup label="Comercio y Marketing">
+                                <option value="ac">Actividades Comerciales</option>
+                                <option value="gvec">Gestión de Ventas y Espacios Comerciales</option>
+                                <option value="ci">Comercio Internacional</option>
+                                <option value="tl">Transporte y Logística</option>
+                            </optgroup>
+                            <optgroup label="Informática y Comunicaciones">
+                                <option value="smr">Sistemas Microinformáticos y Redes</option>
+                                <option value="asir">Administración de Sistemas Informáticos en Red</option>
+                                <option value="daw">Desarrollo de Aplicaciones WEB</option>
+                                <option value="dam">Desarrollo de Aplicaciones Multiplataforma</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <p>Turno:</p>
+                        <input type="radio" name="turno" id="ma" value="ma" required>
+                        <label for="ma">Mañana</label>
+                        <input type="radio" name="turno" id="t" value="t" required>
+                        <label for="t">Tarde</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div id="alta">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
     <footer>
         <address>CIFP Daniel</address>
     </footer>

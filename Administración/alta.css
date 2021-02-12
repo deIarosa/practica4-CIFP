@@ -10,15 +10,9 @@ h2 {
     border-radius: 1em;
     background-color: #aad4f0;
     margin: 0;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-h3 {
-    padding: 0.5em;
-    margin: 0;
-    font-size: 15px;
-    margin: 1.5em;
-}
 
 img {
     height: 100px;
@@ -44,7 +38,7 @@ nav a {
     justify-content: center;
     align-items: center;
     margin: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 nav a:hover,
@@ -77,22 +71,9 @@ nav ul li {
 }
 
 main {
-    font-size: 15px;
+    font-size: 12px;
 }
 
-main ul li {
-    margin: 3em;
-}
-
-main ul li ul li {
-    margin: 1em;
-}
-
-#main {
-    margin: 3em;
-    border: 1px solid #4F81BD;
-    width: 700px;
-}
 
 footer {
     position: fixed;
@@ -102,16 +83,16 @@ footer {
     width: 100%;
     background: #aad4f0;
     text-align: center;
-    padding: 50px;
-    font-size: 12px;
+    padding: 30px;
+    font-size: 10px;
 }
 
 form {
-    margin: 2em;
+    margin: 2.5em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 40% 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: "form1 form2"
+    grid-template-areas: "form1 form2";
 }
 
 #form {
@@ -123,7 +104,7 @@ form {
 }
 
 legend {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 label,
@@ -140,11 +121,12 @@ fieldset {
 
 #form2 fieldset {
     width: 15cm;
-    height: 6.7cm;
+    height: 2.5cm;
 }
 
 #alta input {
-    margin: 0.6em;
+    margin: 4.5em;
     width: 100px;
     height: 40px;
+    font-size: 12px;
 }
