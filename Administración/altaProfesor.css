@@ -137,11 +137,6 @@ header label:hover {
     color: white;
 }
 
-.logoMenu {
-    height: 40px;
-    width: 40px;
-    padding: 0;
-}
 
 #footer {
     display: flex;
