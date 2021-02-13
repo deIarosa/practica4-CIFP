@@ -1,32 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIFP Daniel - Administración - Baja de alumno</title>
-    <link rel="stylesheet" href="bajaAlumno.css">
+    <link rel="stylesheet" href="baja.css">
 </head>
+
 <body>
     <header>
-        <section>
-            <h2>CIFP Daniel - Administración - Baja de alumno</h2>
-            <nav class="menu">
-                <img src="../img/logo.jpg" alt="logoCIFP">
-                <ul>
-                    <li><a href="administración.html">INICIO</a></li>
-                    <li><a href="altaProfesor.html">Alta de profesor</a></li>
-                    <li><a href="bajaProfesor.html">Baja de profesor</a></li>
-                    <li><a href="altaAlumno.html">Alta de alumno</a></li>
-                    <li><a href="bajaAlumno.html">Baja de alumno</a></li>
-                    <li><a href="../index.html">Cerrar sesión</a></li>
-                </ul>
-            </nav>
-        </section>
+        <nav class="menu">
+            <ul>
+                <li><a href="administración.html">INICIO</a></li>
+                <li><a href="altaProfesor.html">Alta de profesor</a></li>
+                <li><a href="bajaProfesor.html">Baja de profesor</a></li>
+                <li><a href="altaAlumno.html">Alta de alumno</a></li>
+                <li><a href="bajaAlumno.html">Baja de alumno</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <h2>CIFP Daniel - Administración - Baja de alumno</h2>
+
+        <table id="t1">
+            <thead>
+                <tr>
+                    <th>Nombre y apellidos</th>
+                    <th>Correo eléctronico</th>
+                    <th>Teléfono</th>
+                    <th>Curso</th>
+                    <th>Dar de baja</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Daniel López Martínez</td>
+                    <td>daniel@gmail.com</td>
+                    <td>111111111</td>
+                    <td>Desarrollo de Aplicaciones Web</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Ana García Rojo</td>
+                    <td>ana@gmail.com</td>
+                    <td>111111222</td>
+                    <td>Comercio Internacional</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>David Alonso Ortega</td>
+                    <td>david@gmail.com</td>
+                    <td>222333111</td>
+                    <td>Transporte y Logística</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Paula González Gil</td>
+                    <td>paula@gmail.com</td>
+                    <td>255666890</td>
+                    <td>Sistemas Microinformáticos y Redes</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Juan Carlos Abril Herrera</td>
+                    <td>juan@gmail.com</td>
+                    <td>273456655</td>
+                    <td>Administración y Finanzas</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Rodrigo Martínez García</td>
+                    <td>rodrigo@gmail.com</td>
+                    <td>290056655</td>
+                    <td>Desarrollo de Aplicaciones Multiplataforma</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Andrea Burgos López</td>
+                    <td>andrea@gmail.com</td>
+                    <td>291156655</td>
+                    <td>Asistencia a la Dirección</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Sergio García Jiménez</td>
+                    <td>sergio@gmail.com</td>
+                    <td>341156655</td>
+                    <td>Asistencia a la Dirección</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Marcos Sánchez Verde</td>
+                    <td>marcos@gmail.com</td>
+                    <td>341333605</td>
+                    <td>Gestión Administrativa</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Diana Hernández Sainz</td>
+                    <td>diana@gmail.com</td>
+                    <td>400273615</td>
+                    <td>Gestión de Ventas y Espacios Comerciales</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Gabriel Terán Gómez</td>
+                    <td>gabriel@gmail.com</td>
+                    <td>400567895</td>
+                    <td>Administración de Sistemas Informáticos en Red</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Luis Mendoza Muñoz</td>
+                    <td>luis@gmail.com</td>
+                    <td>501122767</td>
+                    <td>Actividades Comerciales</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Mario Molina Llorente</td>
+                    <td>mario@gmail.com</td>
+                    <td>660122767</td>
+                    <td>Actividades Comerciales</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td>Lara Arnaiz Cuesta</td>
+                    <td>lara@gmail.com</td>
+                    <td>689010767</td>
+                    <td>Desarrollo de Aplicaciones Web</td>
+                    <td><input type="checkbox"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="boton">
+            <input type="submit" value="Dar de baja">
+        </div>
+    </main>
     <footer>
-        <address>CIFP Daniel</address>
+        <div id="footer">
+            <img src="../img/junta.png" alt="Junta" id="junta">
+            <img src="../img/logo.jpg" alt="logoCIFP" id="logo">
+            <img src="../img/twitter.png" alt="Twitter" id="twitter">
+        </div>
     </footer>
 </body>
+
 </html>
