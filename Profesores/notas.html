@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIFP Daniel - Profesor - Introducir notas</title>
+    <link rel="stylesheet" href="funciones.css">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="profesores.html">INICIO</a></li>
+                <li><a href="tarea.html">Definir tarea</a></li>
+                <li><a href="examen.html">Definir examen</a></li>
+                <li><a href="notas.html">Introducir notas</a></li>
+                <li><a href="calificaciones.html">Ver calificaciones</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CIFP Daniel - Profesor - Introducir notas</h2>
+        <form>
+            <div>
+                <fieldset>
+                    <legend>Notas</legend>
+                    <div class="funciones">
+                        <label for="modulo">Módulo:</label>
+                        <select id="modulo" name="select">
+                            <option value="none" selected disabled hidden>&nbsp;</option>
+                            <option value="value1">Módulo A</option>
+                            <option value="value2">Módulo B</option>
+                            <option value="value3">Módulo C</option>
+                        </select>
+                    </div>
+                    <div class="funciones">
+                        <label for="alumno">Alumno:</label>
+                        <select id="alumno" name="select">
+                            <option value="none" selected disabled hidden>&nbsp;</option>
+                            <option value="value1">Alumno 1</option>
+                            <option value="value2">Alumno 2</option>
+                            <option value="value3">Alumno 3</option>
+                            <option value="value4">Alumno 4</option>
+                            <option value="value5">Alumno 5</option>
+                            <option value="value6">Alumno 6</option>
+                            <option value="value7">Alumno 7</option>
+                            <option value="value8">Alumno 8</option>
+                            <option value="value9">Alumno 9</option>
+                            <option value="value10">Alumno 10</option>
+                            <option value="value11">Alumno 11</option>
+                            <option value="value12">Alumno 12</option>
+                            <option value="value13">Alumno 13</option>
+                            <option value="value14">Alumno 14</option>
+                            <option value="value15">Alumno 15</option>
+                        </select>
+                    </div>
+                    <div class="funciones">
+                        <label for="te">Tarea o Examen:</label>
+                        <select id="te" name="select">
+                            <option value="none" selected disabled hidden>&nbsp;</option>
+                            <option value="value1">Tarea</option>
+                            <option value="value2">Examen</option>
+                        </select>
+                    </div>
+                    <div class="funciones">
+                        <label for="evaluacion">Evaluación:</label>
+                        <select id="evaluacion" name="select">
+                            <option value="none" selected disabled hidden>&nbsp;</option>
+                            <option value="value1">1ª Evaluación</option>
+                            <option value="value2">2ª Evaluación</option>
+                            <option value="value3">3ª Evaluación</option>
+                        </select>
+                    </div>
+                    <div class="funciones"><label for="nota">Nota:</label>
+                        <input type="number" step="any" id="nota" name="nota" required></div>
+                </fieldset>
+            </div>
+            <div id="boton">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="footer">
+            <img src="../img/junta.png" alt="Junta" id="junta">
+            <img src="../img/logo.jpg" alt="logoCIFP" id="logo">
+            <img src="../img/twitter.png" alt="Twitter" id="twitter">
+        </div>
+    </footer>
+</body>
+
+</html>
