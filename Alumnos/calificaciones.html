@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CIFP Daniel - Alumno - Ver calificaciones</title>
+    <link rel="stylesheet" href="funciones.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="alumnos.html">INICIO</a></li>
+                <li><a href="tareas.html">Notas de tareas</a></li>
+                <li><a href="exámenes.html">Notas de exámenes</a></li>
+                <li><a href="calificaciones.html">Ver calificaciones</a></li>
+                <li><a href="../index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>CIFP Daniel - Alumno - Ver calificaciones</h2>
+        <table id="final">
+            <thead>
+                <tr>
+                    <th>Módulo</th>
+                    <th>1ª Evaluación</th>
+                    <th>2ª Evaluación</th>
+                    <th>3ª Evaluación</th>
+                    <th>NOTA FINAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sistemas Informáticos</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bases de datos</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Programación</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lenguajes de Marcas y Sistemas de Gestión de Información</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Entornos de Desarrollo</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>7</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Formación y orientación laboral</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Desarrollo Web en Entorno Cliente</td>
+                    <td>7</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Desarrollo Web en Entorno Servidor</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Despliegue de Aplicaciones Web</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Diseño de Interfaces Web</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Empresa e Iniciativa Emprendedora</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>8</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="boton"><input type="button" value="Ver nota final" onclick="obtenerMedias();"></div>
+    </main>
+    <footer>
+        <div id="footer">
+            <img src="../img/junta.png" alt="Junta" id="junta">
+            <img src="../img/logo.jpg" alt="logoCIFP" id="logo">
+            <a href="#"><img src="../img/twitter.png" alt="Twitter" id="twitter"></a>
+        </div>
+    </footer>
+    <script>
+        let notas = obtenerNotas();
+        let segmentos = notas.split("|");
+
+        function obtenerMedias() {
+            let contador = 0;
+
+            for (x = 0; x < segmentos.length - 1; x++) {
+                if (segmentos[x] != "") {
+                    contador = contador + 1;
+                    let media = calcularNota(segmentos[x]);
+                    mostrarNota(media, contador);
+                }
+            }
+
+        }
+
+        function mostrarNota(media, posicion) {
+            final.rows[posicion].cells[4].innerHTML = media;
+        }
+
+        function calcularNota(notas) {
+            let arregloNotas = notas.split(",");
+            nota1 = arregloNotas[1];
+            nota2 = arregloNotas[2];
+            nota3 = arregloNotas[3];
+
+            media = (parseInt(nota1) + parseInt(nota2) + parseInt(nota3)) / 3;
+            media2 = media.toFixed(1);
+            return media2;
+        }
+
+        function obtenerNotas() {
+            let cadenaNotas = "";
+            let filas = final.rows.length;
+            let columnas = final.rows[0].cells.length;
+
+            for (x = 1; x < filas; x++) {
+                for (y = 0; y < columnas - 1; y++) {
+                    cadenaNotas = cadenaNotas + final.rows[x].cells[y].innerHTML;
+                    cadenaNotas = cadenaNotas + ",";
+                }
+
+                cadenaNotas = cadenaNotas + "|";
+            }
+            return cadenaNotas;
+        }
+    </script>
 </body>
+
 </html>

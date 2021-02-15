@@ -34,7 +34,6 @@ h3 {
     border: 2px solid;
 }
 
-
 #usuario {
     display: grid;
     grid-template-columns: 1fr 2fr;
