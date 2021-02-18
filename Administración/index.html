@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIFP Daniel - Inicio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="inicio">
+        <h3>Nombre de usuario y Contraseña</h3>
+        <img class="logo" src="img/logo.jpg" alt="logoCIFP">
+        <form>
+            <div id="usuario">
+                <label id="usu" for="nombre">Usuario:</label>
+                <input id="nombre" type="text" placeholder="admin, profesor o alumno">
+            </div>
+            <div id="password">
+                <label id="pass" for="passwd">Contraseña:</label>
+                <input id="passwd" type="password" placeholder="Contraseña">
+            </div>
+        </form>
+
+        <button id="iniciar">Iniciar sesión</button>
+    </div>
+    <script>
+        document.getElementById("iniciar").addEventListener("click", iniciar);
+
+        function iniciar() {
+            let usuario = document.getElementById("nombre").value;
+
+            if (usuario == "admin") {
+                window.location = "Administración/administración.html";
+            } else if (usuario == "profesor") {
+                window.location = "Profesores/profesores.html";
+            } else if (usuario == "alumno") {
+                window.location = "Alumnos/alumnos.html";
+            } else {
+                alert("Para acceder a la página debes ser admin, profesor o alumno");
+            }
+        }
+    </script>
+</body>
+
+</html>
