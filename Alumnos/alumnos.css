@@ -74,15 +74,15 @@ nav ul li {
 }
 
 main {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 main ul li {
-    margin: 3em;
+    margin: 2em;
 }
 
 main ul li ul li {
-    margin: 1em;
+    margin: 0.5em;
 }
 
 #main {
