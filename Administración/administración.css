@@ -132,6 +132,8 @@ footer {
 }
 
 
+/* Versión móvil */
+
 @media (max-width: 480px) {
 
     header label {

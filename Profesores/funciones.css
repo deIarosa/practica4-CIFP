@@ -61,6 +61,7 @@ footer {
     padding: 70px;
     color: black;
     text-align: center;
+    font-size: 13px;
 }
 
 header label {
@@ -121,4 +122,48 @@ header label:hover {
 
 .menuBoton {
     display: none;
+}
+
+@media (max-width: 480px) {
+
+    #boton {
+        border-top: 0px;
+        grid-column: 1;
+        background-color: white;
+        text-align: center;
+        margin-left: -30px;
+    }
+
+    h2 {
+        margin: 5px;
+        grid-column: 1;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        width: 85%;
+        margin-left: -100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #botonMenu:checked~.menu {
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    .menuBoton {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
 }
