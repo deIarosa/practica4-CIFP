@@ -220,6 +220,7 @@ header label:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1px;
+        margin: 0;
     }
 
     #boton {
