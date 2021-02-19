@@ -124,6 +124,8 @@ header label:hover {
     display: none;
 }
 
+/* Versión móvil */
+
 @media (max-width: 480px) {
 
     #boton {
