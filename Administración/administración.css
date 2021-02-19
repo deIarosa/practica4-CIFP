@@ -134,7 +134,6 @@ footer {
 
 @media (max-width: 480px) {
 
-    /*Menu en icono*/
     header label {
         display: block;
     }
