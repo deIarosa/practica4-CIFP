@@ -63,6 +63,7 @@ footer {
     padding: 70px;
     color: black;
     text-align: center;
+    font-size: 13px;
 }
 
 header label {
@@ -111,6 +112,7 @@ header label:hover {
     height: 70px;
     width: 80px;
 }
+
 #twitter {
     height: 40px;
     width: 70px;
@@ -135,4 +137,75 @@ header label:hover {
 
 .menuBoton {
     display: none;
+}
+
+/* Versión móvil */
+
+@media (max-width: 480px) {
+
+    header label {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        width: 85%;
+        margin-left: -100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #botonMenu:checked~.menu {
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    .menuBoton {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+
+    h2 {
+        margin: 5px;
+        text-align: justify;
+        font-size: 0.9em;
+    }
+
+    table {
+        font-size: 1em;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+    }
+
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    }
+
+    main {
+        background-color: white;
+        grid-area: main;
+        font-size: 14px;
+        display: grid;
+        grid-template-rows: 0.01fr 5fr 0.1fr;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
 }

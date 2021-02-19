@@ -130,3 +130,49 @@ footer {
 .menuBoton {
     display: none;
 }
+
+/* Versión móvil */
+
+@media (max-width: 480px) {
+
+    header label {
+        display: block;
+    }
+
+    .miLogo {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        width: 85%;
+        margin-left: -100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 2em;
+    }
+
+    #botonMenu:checked~.menu {
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    body {
+        font-size: 0.7em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .menuBoton {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+}
