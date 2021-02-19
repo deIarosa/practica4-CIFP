@@ -103,6 +103,14 @@ footer {
     font-size: 13px;
 }
 
+#botonMenu {
+    display: none;
+}
+
+.logoMenu {
+    display: none;
+}
+
 #footer {
     display: flex;
     justify-content: space-between;
@@ -123,4 +131,54 @@ footer {
     width: 70px;
 }
 
+.logoMenu {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+}
 
+
+@media (max-width: 480px) {
+
+    /*Menu en icono*/
+    header label {
+        display: block;
+    }
+
+    .miLogo {
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        width: 85%;
+        margin-left: -100%;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        padding: 2em;
+    }
+
+    #botonMenu:checked~.menu {
+        margin: 0;
+        transition: all 0.5s;
+    }
+
+    body {
+        font-size: 0.7em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+    }
+
+    .logoMenu {
+        display: block;
+        height: 60px;
+        width: 60px;
+    }
+}
