@@ -128,3 +128,11 @@ header label:hover {
     height: 40px;
     margin-top: 10px;
 }
+
+#botonMenu {
+    display: none;
+}
+
+.menuBoton {
+    display: none;
+}

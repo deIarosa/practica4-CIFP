@@ -122,3 +122,11 @@ footer {
     height: 40px;
     width: 70px;
 }
+
+#botonMenu {
+    display: none;
+}
+
+.menuBoton {
+    display: none;
+}

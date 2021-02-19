@@ -103,14 +103,6 @@ footer {
     font-size: 13px;
 }
 
-#botonMenu {
-    display: none;
-}
-
-.logoMenu {
-    display: none;
-}
-
 #footer {
     display: flex;
     justify-content: space-between;
@@ -131,10 +123,12 @@ footer {
     width: 70px;
 }
 
-.logoMenu {
-    height: 40px;
-    width: 40px;
-    padding: 0;
+#botonMenu {
+    display: none;
+}
+
+.menuBoton {
+    display: none;
 }
 
 
@@ -176,7 +170,7 @@ footer {
         font-size: 1.4em;
     }
 
-    .logoMenu {
+    .menuBoton {
         display: block;
         height: 60px;
         width: 60px;
